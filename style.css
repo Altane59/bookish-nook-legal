@@ -1,0 +1,28 @@
+:root {
+  --bg: #1A1322; --panel: #251C30; --line: #43354F; --text: #F3E8D2; --muted: #BFAE96; --amber: #FFC46B;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+.brand { font-family: "Pixelify Sans", ui-monospace, monospace; font-weight: 600; font-size: 26px; color: var(--amber); text-decoration: none; }
+nav a { color: var(--muted); margin-left: 14px; font-size: 15px; }
+nav a[aria-current="page"] { color: var(--text); }
+h1, h2 { font-family: "Pixelify Sans", ui-monospace, monospace; font-weight: 600; line-height: 1.2; }
+h1 { font-size: 30px; margin: 0 0 6px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+p, li { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+a { color: var(--amber); }
+.muted { color: var(--muted); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
+.card p:last-child { margin-bottom: 0; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: var(--panel); color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .3px; }
+.links { display: grid; gap: 12px; margin-top: 24px; }
+.links a { display: block; padding: 16px 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; color: var(--text); text-decoration: none; font-family: "Pixelify Sans", ui-monospace, monospace; font-size: 18px; }
+.links a:hover { border-color: var(--amber); }
+.scroll { overflow-x: auto; }
