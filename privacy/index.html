@@ -28,7 +28,7 @@
 <tr><td>Screenshots you add</td><td>Sent once for reading, never stored by Bookish Nook</td><td>So Claude can find the book titles in them</td></tr>
 <tr><td>Book titles you look up (with the author and your genre names)</td><td>Sent once, never stored by Bookish Nook</td><td>So Claude can fill in details like the series</td></tr>
 <tr><td>Book titles and authors on your list</td><td>Sent through our server to Open Library to find each book's real cover, and to check titles read from screenshots. Never stored by Bookish Nook.</td><td>To show real covers and fix misread titles (you can turn this off)</td></tr>
-<tr><td>Anonymous device ID (a random code made on first use)</td><td>On your device, and as a short-lived usage counter on our server</td><td>To stop the reading service being abused, without needing an account</td></tr>
+<tr><td>Anonymous device ID (a random code made on first use)</td><td>On your device, and with usage counters on our server: how many screenshots it had read each day and each month, and the month it first used screenshot reading</td><td>To give each phone its free screenshot reads each month and stop the reading service being abused, without needing an account</td></tr>
 <tr><td>Purchase status</td><td>Apple</td><td>To unlock and restore what you've bought</td></tr>
 </table></div>
 <p>We do not collect your name, email address, location or contacts.</p>
@@ -52,7 +52,7 @@
 <tr><th>Service</th><th>Purpose</th><th>Data shared</th><th>Their policy</th></tr>
 <tr><td>Anthropic</td><td>Reading screenshots and looking up titles</td><td>The screenshot or title, and your genre names</td><td><a href="https://www.anthropic.com/legal/privacy">anthropic.com</a></td></tr>
 <tr><td>Open Library (Internet Archive)</td><td>Finding real book covers and checking titles</td><td>A book's title and author, sent from our server, so Open Library never sees your device or IP address</td><td><a href="https://archive.org/about/terms.php">archive.org</a></td></tr>
-<tr><td>Our reading service's host</td><td>Passing requests to Anthropic and counting usage</td><td>The request passes through in transit. Standard request details (such as IP address) are kept briefly by the host for running the service. An anonymous usage counter keyed to your device ID expires automatically within 14 days.</td><td>Named here once the service is live</td></tr>
+<tr><td>Our reading service's host</td><td>Passing requests to Anthropic and counting usage</td><td>The request passes through in transit. Standard request details (such as IP address) are kept briefly by the host for running the service. Anonymous usage counters keyed to your device ID are deleted automatically (see Retention).</td><td>Cloudflare (<a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com</a>)</td></tr>
 <tr><td>Apple</td><td>App distribution and purchases</td><td>Purchase details</td><td><a href="https://www.apple.com/legal/privacy/">apple.com</a></td></tr>
 </table></div>
 <p>There are no advertising, analytics or crash-reporting tools in the app.</p>
@@ -69,7 +69,7 @@
 <li><b>Library and settings:</b> on your device until you clear them or delete the app.</li>
 <li><b>Screenshots and titles:</b> never stored by Bookish Nook (see section 3).</li>
 <li><b>Covers:</b> saved on your device with your library. Open Library and Cloudflare may cache the public cover images.</li>
-<li><b>Usage counter:</b> expires automatically within 14 days.</li>
+<li><b>Usage counters:</b> daily counts are deleted within 2 days, monthly counts within about 2 months, and the month your phone first used screenshot reading after a year without use. They contain only numbers and your anonymous device ID, never screenshots or book titles.</li>
 <li><b>Purchase records:</b> kept by Apple.</li>
 </ul>
 
