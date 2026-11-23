@@ -27,7 +27,7 @@
 <tr><td>Mini you's look, your cat and your settings</td><td>On your device only</td><td>So the app works</td></tr>
 <tr><td>Screenshots you add</td><td>Sent once for reading, never stored by Bookish Nook</td><td>So Claude can find the book titles in them</td></tr>
 <tr><td>Book titles you look up (with the author and your genre names)</td><td>Sent once, never stored by Bookish Nook</td><td>So Claude can fill in details like the series</td></tr>
-<tr><td>Book titles and authors on your list</td><td>Sent through our server to Open Library to find each book's real cover. Never stored by Bookish Nook.</td><td>To show real covers (you can turn this off)</td></tr>
+<tr><td>Book titles and authors on your list</td><td>Sent through our server to Open Library to find each book's real cover, and to check titles read from screenshots. Never stored by Bookish Nook.</td><td>To show real covers and fix misread titles (you can turn this off)</td></tr>
 <tr><td>Anonymous device ID (a random code made on first use)</td><td>On your device, and as a short-lived usage counter on our server</td><td>To stop the reading service being abused, without needing an account</td></tr>
 <tr><td>Purchase status</td><td>Apple</td><td>To unlock and restore what you've bought</td></tr>
 </table></div>
@@ -42,7 +42,7 @@
 </ul>
 
 <h2>4. Real covers</h2>
-<p>To show real book covers, the title and author of each book on your list are looked up in <a href="https://openlibrary.org">Open Library</a>, a free library run by the non-profit Internet Archive. The look-up goes through our server, so Open Library never sees your device. The covers are then saved on your phone. Nothing else about you or your library is sent. You can turn this off in <b>You → Settings → Find real covers</b>.</p>
+<p>To show real book covers, the title and author of each book on your list are looked up in <a href="https://openlibrary.org">Open Library</a>, a free library run by the non-profit Internet Archive. The look-up goes through our server, so Open Library never sees your device. The covers are then saved on your phone. When Claude reads a book from a screenshot, the same look-up checks the title and author, so a misread word can be fixed before you add it. Nothing else about you or your library is sent. You can turn this off in <b>You → Settings → Find real covers and check titles</b>.</p>
 
 <h3>Your photos</h3>
 <p>Bookish Nook only opens the screenshots you choose, or ones you share to it from the share sheet. If you tap <b>Delete from Photos</b> after your books are saved, the app asks for permission to your photo library and deletes only those screenshots, after iPhone asks you to confirm. It never looks through your photos and never uploads anything else.</p>
@@ -51,7 +51,7 @@
 <div class="scroll"><table>
 <tr><th>Service</th><th>Purpose</th><th>Data shared</th><th>Their policy</th></tr>
 <tr><td>Anthropic</td><td>Reading screenshots and looking up titles</td><td>The screenshot or title, and your genre names</td><td><a href="https://www.anthropic.com/legal/privacy">anthropic.com</a></td></tr>
-<tr><td>Open Library (Internet Archive)</td><td>Finding real book covers</td><td>A book's title and author, sent from our server, so Open Library never sees your device or IP address</td><td><a href="https://archive.org/about/terms.php">archive.org</a></td></tr>
+<tr><td>Open Library (Internet Archive)</td><td>Finding real book covers and checking titles</td><td>A book's title and author, sent from our server, so Open Library never sees your device or IP address</td><td><a href="https://archive.org/about/terms.php">archive.org</a></td></tr>
 <tr><td>Our reading service's host</td><td>Passing requests to Anthropic and counting usage</td><td>The request passes through in transit. Standard request details (such as IP address) are kept briefly by the host for running the service. An anonymous usage counter keyed to your device ID expires automatically within 14 days.</td><td>Named here once the service is live</td></tr>
 <tr><td>Apple</td><td>App distribution and purchases</td><td>Purchase details</td><td><a href="https://www.apple.com/legal/privacy/">apple.com</a></td></tr>
 </table></div>
